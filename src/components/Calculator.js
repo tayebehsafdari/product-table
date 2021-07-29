@@ -2,13 +2,9 @@ import React, {useState} from "react";
 import BoilingVerdict from "./BoilingVerdict";
 import TemperatureInput from "./TemperatureInput";
 
-const toCelsius = fahrenheit => {
-    return (fahrenheit - 32) * 5 / 9;
-};
+const toCelsius = fahrenheit => (fahrenheit - 32) * 5 / 9;
 
-const toFahrenheit = celsius => {
-    return (celsius * 9 / 5) + 32;
-};
+const toFahrenheit = celsius => (celsius * 9 / 5) + 32;
 
 const tryConvert = (temperature, convert) => {
     const input = parseFloat(temperature);
